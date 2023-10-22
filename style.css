@@ -1,0 +1,98 @@
+*,
+*::before, 
+*::after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html, 
+body{
+  height: 100%;
+  background-color: rgb(155, 155, 155);
+  font-family: serif;
+  color: black;
+  font-size: 25px;
+}
+.wrapper{
+  height: 100%;
+  padding: 50px;
+}
+.slick-list{
+  overflow: hidden;
+}
+.slick-track{
+  display: flex;
+  align-items: flex-start;
+}
+img{
+  width: 300px;
+  height: 195px;
+}
+.big_img{
+  width: 470px;
+  height: 350px;
+}
+.slider{
+  position: relative;
+  padding: 20px 95px;
+}
+.slider .slick-arrow{
+  position: absolute;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 60px;
+}
+.slider .slick-arrow.slick-prev{
+  top: 44%;
+  left: 0;
+  background: url(./img/single-arrow-right.png) 0 0 / 100% no-repeat;
+  transform: rotate(180deg);
+}
+.slider .slick-arrow.slick-next{
+  top: 50%;
+  right: 0;
+  background: url(./img/single-arrow-right.png) 0 0 / 100% no-repeat;
+  
+}
+.slider .slick-arrow.slick-disabled{
+  opacity: 0.2;
+}
+
+/* **включить centerMode:true** */
+.slider_item{
+  opacity: 0.4;
+  text-align:center;
+}
+.slider_item.slick-center{
+  transition: all 0.4s ease 0s;
+  opacity: 1;
+}
+.slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li{
+  list-style: none;
+  margin: 0px 10px;
+}
+.slider .slick-dots button{
+  font-size: 0;
+  width: 5px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: black;
+}
+.slider .slick-dots li.slick-active button{
+  width: 6px;
+  height: 23px;
+  background-color: transparent;
+  border: 1px black solid;
+}
+
+.sliderbig_item{
+  text-align:center;
+}
